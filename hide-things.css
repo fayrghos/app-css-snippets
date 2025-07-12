@@ -1,0 +1,87 @@
+/**
+* @name Hide Things
+* @description Hide some unuseful elements.
+* @author fayrghos
+*/
+
+:root {
+    /* Hide avatar decorations */
+    [class^=avatarDecoration_] {
+        display: none;
+    }
+
+    /* Hide profile effects */
+    [class^="profileEffects_"] {
+        display: none;
+    }
+
+    /* Hide nitro, gifts and super reacts */
+    [href="/store"],
+    button[aria-label="Send a gift"],
+    [for="burst-reaction-toggle-button"] {
+        display: none;
+    }
+
+    /* Hide activities button in chat */
+    [class^=channelAppLauncher_] {
+        display: none;
+    }
+    :root {
+        --custom-channel-textarea-app-launcher-button-gap: -44px;
+    }
+    [class*=barWithAppLauncherButton_cf58b5] {
+        right: calc(8px + var(--custom-channel-textarea-app-launcher-button-gap));
+    }
+
+    /* Hide activities from members list */
+    [class^=membersGroup_]:has([d^="M10.56 1.1c-.46.05-.7.53-.64.98.18"]),
+    div:not([class]):has([class^=facePile_]) {
+        display: none;
+    }
+
+    /* Hide activities button from images */
+    [class^=hoverButton_] {
+        display: none;
+    }
+
+    /* Hide name plates */
+    .container__4bbc6 {
+        background: linear-gradient(90deg,rgba(42, 123, 155, 0) 0%, rgba(237, 221, 83, 0) 100%) !important;
+      }
+      .videoContainer__4bbc6 {
+        mask-image: none !important;
+      }
+      .img__4bbc6 {
+        display: none;
+      }
+
+    /* Hide clan tags */
+    [class*="chipletContainerInner_"]:has([src*="/clan-badges/"]) {
+        display: none;
+    }
+
+    /* Hide boost bars and icons */
+    .container__0d0f9 {
+        display: none;
+    }
+
+    /* Hide the guild name badges */
+    .guildIconV2Container__85d16 {
+        display: none
+    }
+
+    /* Hide role icons */
+    [class*="roleIcon"] {
+        display: none;
+    }
+
+    /* Hide channel list buttons */
+    [class*="actionIcon"] {
+        display: none;
+    }
+
+    /* Hide the server name in title bar */
+    [class*="title_c38106"] {
+        display: none;
+    }
+}

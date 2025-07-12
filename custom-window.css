@@ -1,0 +1,28 @@
+/**
+* @name Custom Window
+* @description Modifies the app window.
+* @author fayrghos
+*/
+
+:root {
+    /* Adjusts window buttons */
+    .winButton_c38106 {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    /* Removes the maximize button */
+    .winButton_c38106.winButtonMinMax_c38106[aria-label="Maximise"] {
+        display: none;
+    }
+
+    /* Removes the help button */
+    .button__85643.iconWrapper__9293f.clickable__9293f[aria-label="Help"] {
+        display: none;
+    }
+    .leading_c38106, .trailing_c38106 {
+        gap: 0px;
+    }
+}
