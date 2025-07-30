@@ -17,7 +17,7 @@
 
     /* Hide nitro, gifts and super reacts */
     [href="/store"],
-    button[aria-label="Send a gift"],
+    [aria-label="Send a gift"],
     [for="burst-reaction-toggle-button"] {
         display: none;
     }
