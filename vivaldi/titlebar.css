@@ -1,0 +1,23 @@
+/* Hide the maximize button */
+#browser.linux .window-buttongroup button.window-maximize {
+    display: none;
+}
+
+/* Adjusts other buttons */
+#browser.linux .window-buttongroup button {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+/* Adjusts the tab padding */
+.linux #tabs-container:not(.none).top {
+    padding-left: 2px;
+    padding-right: calc(50px / var(--uiZoomLevel));
+}
+
+/* Hides the vivaldi icon */
+.vivaldi {
+    display: none;
+}
