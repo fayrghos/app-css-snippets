@@ -6,14 +6,14 @@
 
 :root {
     /* Hide avatar decorations */
-    [class^=avatarDecoration_] {
+    /* [class^=avatarDecoration_] {
         display: none;
-    }
+    } */
 
     /* Hide profile effects */
-    [class^="profileEffects_"] {
+    /* [class^="profileEffects_"] {
         display: none;
-    }
+    } */
 
     /* Hide nitro, gifts and super reacts */
     [href="/store"],
