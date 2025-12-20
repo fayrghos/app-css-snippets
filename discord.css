@@ -1,0 +1,47 @@
+/**
+* @name Hide Things
+* @description Hide some unuseful elements.
+* @author fayrghos
+*/
+
+:root {
+
+    /* Server name in title bar */
+    [class*="edbb22df99c39831-title"] {
+        display: none;
+    }
+
+    /* Guild tags */
+    [class*="clanTag"] {
+        display: none;
+    }
+
+    /* Guild badges */
+    [class*="guildIconV2Container"] {
+        display: none;
+    }
+
+    /* Boost bar */
+    [class*="containerWithMargin"] {
+        display: none;
+    }
+
+    /* Nameplates */
+    div[class*="-container"]>div[class$=-videoContainer] {
+        display: none;
+    }
+
+    div[class*="-container"]:has(div[class$=-videoContainer]) {
+        background: none !important;
+    }
+
+    /* Verified bot checkmarks */
+    [class*="botTagVerified"] {
+        display: none;
+    }
+
+    /* Guild invite buttons */
+    [class*="inviteButton"] {
+        display: none;
+    }
+}
