@@ -44,4 +44,14 @@
     [class*="inviteButton"] {
         display: none;
     }
+
+    /* Gift button in the chatbar */
+    [aria-label="Send a gift"] {
+        display: none;
+    }
+
+    /* Nitro button in the DM tab */
+    [data-list-item-id*="nitro"] {
+        display: none;
+    }
 }
