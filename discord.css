@@ -40,11 +40,6 @@
         display: none;
     }
 
-    /* Guild invite buttons */
-    [class*="inviteButton"] {
-        display: none;
-    }
-
     /* Gift button in the chatbar */
     [aria-label="Send a gift"] {
         display: none;
