@@ -1,52 +1,41 @@
 /**
 * @name Hide Things
-* @description Hide some unuseful elements.
+* @description Hide some non useful elements.
 * @author fayrghos
 */
 
-:root {
+/* Clan tags in chat */
+[class*="clanTag"] {
+  display: none;
+}
 
-    /* Server name in title bar */
-    [class*="edbb22df99c39831-title"] {
-        display: none;
-    }
+/* Guild name badges */
+[class*="guildIconV2Container"] {
+  display: none;
+}
 
-    /* Guild tags */
-    [class*="clanTag"] {
-        display: none;
-    }
+/* Server boost bar */
+[class*="containerWithMargin"] {
+  display: none;
+}
 
-    /* Guild badges */
-    [class*="guildIconV2Container"] {
-        display: none;
-    }
+/* Verified bot check marks */
+[class*="botTagVerified"] {
+  display: none;
+}
 
-    /* Boost bar */
-    [class*="containerWithMargin"] {
-        display: none;
-    }
+/* Gift button in the chat bar */
+[aria-label="Give a Gift"] {
+  display: none;
+}
 
-    /* Nameplates */
-    div[class*="-container"]>div[class$=-videoContainer] {
-        display: none;
-    }
+/* Nitro button in the DM tab */
+[data-list-item-id*="nitro"] {
+  display: none;
+}
 
-    div[class*="-container"]:has(div[class$=-videoContainer]) {
-        background: none !important;
-    }
-
-    /* Verified bot checkmarks */
-    [class*="botTagVerified"] {
-        display: none;
-    }
-
-    /* Gift button in the chatbar */
-    [aria-label="Send a gift"] {
-        display: none;
-    }
-
-    /* Nitro button in the DM tab */
-    [data-list-item-id*="nitro"] {
-        display: none;
-    }
+/* Invite and settings buttons */
+[class*="children__2ea32"],
+[class*="inviteButton"] {
+  display: none;
 }
