@@ -4,8 +4,9 @@
 * @author fayrghos
 */
 
-/* Clan tags in chat */
-[class*="clanTag"] {
+/* Clan tags */
+[class*="clanTag"],
+[class*="guildTagContainer"] {
   display: none;
 }
 
@@ -25,6 +26,7 @@
 }
 
 /* Gift button in the chat bar */
+[aria-label="Send a gift"],
 [aria-label="Give a Gift"] {
   display: none;
 }
@@ -37,5 +39,20 @@
 /* Invite and settings buttons */
 [class*="children__2ea32"],
 [class*="inviteButton"] {
+  display: none;
+}
+
+/* The boost button in the channel list */
+[class*="container__877f0"] {
+  display: none;
+}
+
+/* Add a note button near the nickname */
+[class*="nicknameIcons__63ed3"] {
+  display: none;
+}
+
+/* Notification settings above the chat */
+[aria-label="Notification Settings"] {
   display: none;
 }
